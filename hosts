@@ -32,8 +32,7 @@
 192.168.1.154		# Ripping Server: jacktheripper.local
 192.168.1.155		# Docker Server:  docker.local
 192.168.1.156		# Test Server Passthru: passthru.local
-# 192.168.1.157		# Jellyfin Media Server: jellyfin.local
-192.168.1.161		# Jellyfin Media Server: jellyfin.local
+192.168.1.157		# Jellyfin Media Server: jellyfin.local
 
 #------------------------------------------------------------------------------#
 [nas]
