@@ -1,0 +1,63 @@
+# =============================================================================#
+# This is my default ansible 'hosts' file.
+#
+# It lives in ~/inventory but can be use in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+#   - Ungrouped hosts, specify before any group headers.
+#
+# =============================================================================#
+
+[routers]
+192.168.1.1			# Homedom Gateway Router
+192.168.1.3			# Homedom Access Point 1: RT-AX58U
+192.168.1.5			# Homedom Access Point 2: RT-AX58U
+
+#------------------------------------------------------------------------------#
+[infrustructure]
+192.168.1.7			# netguard DNS Firewalll
+
+#------------------------------------------------------------------------------#
+[pve]
+192.168.1.150		# Proxmox Virtual Environment: pve1
+
+#------------------------------------------------------------------------------#
+[servers]
+192.168.1.151		# Plex Media Server: plex.local
+192.168.1.152		# Indexer and Search Server indexer.local
+192.168.1.154		# Ripping Server: jacktheripper.local
+192.168.1.155		# Docker Server:  docker.local
+192.168.1.156		# Test Server Passthru: passthru.local
+# 192.168.1.157		# Jellyfin Media Server: jellyfin.local
+192.168.1.161		# Jellyfin Media Server: jellyfin.local
+
+#------------------------------------------------------------------------------#
+[nas]
+192.168.1.158		# Homedom NAS: homedomnas  User Data store: homedomnas
+192.168.1.159		# Homedom NAS: homedomnas1 Media Data Store: homedomnas1
+# 192.168.1.160		# Homedom NAS: homedomnas2 (Future): homedomnas2
+
+#------------------------------------------------------------------------------#
+[workstations]
+192.168.1.160		# Master Workstation: phatgirl.local
+
+#------------------------------------------------------------------------------#
+[automation]
+192.168.1.153		# Home Assistant: hassos.local
+
+#------------------------------------------------------------------------------#
+[RasbPi]
+192.168.1.7			# netguard DNS Firewalll
+
+#------------------------------------------------------------------------------#
+[iot]
+
+#------------------------------------------------------------------------------#
+[windows]
+
+#------------------------------------------------------------------------------#
+[mac]
